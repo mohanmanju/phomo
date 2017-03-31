@@ -1,6 +1,8 @@
-from tags.input import Input
+from tags.input import *
+from tags.div import *
 
 usr=Input()
-usr.setType("password")
-res=usr.createInput()
+usr.setName("username")
+d=Div()
+d.add(usr)
 print(res)

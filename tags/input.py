@@ -3,7 +3,7 @@ class Input:
         self.type="text"
         self.name="name"
         self.value="value"
-
+        self.finalTag=""
 
     #changing final tag to changed values
     def setFinalTag(self):

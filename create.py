@@ -1,3 +1,4 @@
+
 from tags.input import *
 from tags.div import *
 from tags.para import *
@@ -17,3 +18,4 @@ f.setWidth("567")
 f.add(i)
 f.add(p)
 f.createDiv()
+

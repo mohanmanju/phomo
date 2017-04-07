@@ -12,4 +12,4 @@ class Para:
         self.text=text
 
     def __str__(self):
-        return self.finalTag
+        return self.createPara()

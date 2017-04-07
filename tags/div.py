@@ -8,6 +8,7 @@ class Div:
 
     def createDiv(self):
         self.setFinalTag()
+        return self.finalTag
 
     def setFinalTag(self):
         self.finalTag="<div"+" height=\""+self.height+"\" width=\""+self.width+"\" >\n</div>"
@@ -20,7 +21,7 @@ class Div:
 
         self.finalTag+=itemList+"</div>"
         #self.finalTag=""
-        print(self.finalTag)
+
 
 
     def add(self,item):

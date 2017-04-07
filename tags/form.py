@@ -9,7 +9,7 @@ class Form:
 
     def createForm(self):
         self.setFinalTag()
-
+        return self.finalTag
 
 
 
@@ -38,3 +38,6 @@ class Form:
 
     def setAction(self,action):
         self.action=action
+
+    def __str__(self):
+        return self.createForm()

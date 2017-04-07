@@ -16,3 +16,6 @@ class Anchor:
 
     def setLink(self,link):
         self.link=link
+
+    def __str__(self):
+        return self.createAnchor()

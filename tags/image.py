@@ -24,3 +24,6 @@ class Image:
 
     def setWidth(self,width):
         self.width=width
+
+    def __str__(self):
+        return self.createImage()

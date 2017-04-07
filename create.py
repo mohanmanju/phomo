@@ -1,9 +1,21 @@
-from tags.script import *
 
+from tags.input import *
+from tags.div import *
+from tags.para import *
+from tags.form import *
 
-usr=Script()
+f=Div()
+i=Input()
+i.setType("username")
+p=Input()
+p.setType("password")
 
-usr.setLink("myscripts.js")
+i.createInput()
+p.createInput()
 
-res=usr.createLink()
-print(res)
+f.setHeight("345")
+f.setWidth("567")
+f.add(i)
+f.add(p)
+f.createDiv()
+

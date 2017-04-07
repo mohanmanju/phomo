@@ -1,8 +1,9 @@
-from tags.input import *
-from tags.div import *
+from tags.script import *
 
-usr=Input()
-usr.setName("username")
-d=Div()
-d.add(usr)
+
+usr=Script()
+
+usr.setLink("myscripts.js")
+
+res=usr.createLink()
 print(res)

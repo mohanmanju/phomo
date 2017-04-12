@@ -22,9 +22,11 @@ class Form:
         for i in range(len(self.items)):
             itemList+=str(self.items[i])+"\n"
 
-        self.finalTag+=itemList+"</form>"
+        self.finalTag+=itemList+"</form>\m"
         #self.finalTag=""
-        print(self.finalTag)
+        #print(self.finalTag)
+        fo=open("1.html","a")
+        fo.write(self.finalTag)
 
     def add(self,item):
         self.items.append(item)
@@ -38,6 +40,9 @@ class Form:
 
     def setAction(self,action):
         self.action=action
+
+    def write(self,text):
+        self.items.append(text)
 
     def __str__(self):
         return self.createForm()

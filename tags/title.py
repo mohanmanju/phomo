@@ -4,10 +4,12 @@ class Title:
 
 
     def setFinalTag(self):
-        self.finalTag="<title>"+self.text+"</title>"
+        self.finalTag="<title>"+self.text+"</title>\n"
 
     def createTitle(self):
         self.setFinalTag()
+        fo=open("1.html","a")
+        fo.write(self.finalTag)
         return self.finalTag
 
     def setText(self,text):

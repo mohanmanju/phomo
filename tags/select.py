@@ -15,16 +15,18 @@ class Select:
 
     def createSelect(self):
         self.setFinalTag()
+        fo=open("1.html","a")
+        fo.write(self.finalTag)
 
     def setFinalTag(self):
         result="<select"+" name=\""+self.name+"\" >\n"
         for i in range(len(self.items)):
             result+=self.items[i]
 
-        result+="</select>"
+        result+="</select>\n"
 
         self.finalTag=result
-        print(self.finalTag)
+        #print(self.finalTag)
 
     def setName(self,name):
         self.name=name

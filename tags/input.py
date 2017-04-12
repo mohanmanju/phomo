@@ -2,17 +2,19 @@ class Input:
     def __init__(self):
         self.type="text"
         self.name="name"
-        self.value="value"
+        self.value=""
         self.finalTag=""
 
     #changing final tag to changed values
     def setFinalTag(self):
         #final string to represent a tag in html
-        self.finalTag="<input type=\""+self.type+"\" name=\""+self.name+"\" value=\""+self.value+"\"/>"
+        self.finalTag="<input type=\""+self.type+"\" name=\""+self.name+"\" value=\""+self.value+"\"/>\n"
 
     #creating input using this methods
     def createInput(self):
         self.setFinalTag()
+        fo=open("1.html","a")
+        fo.write(self.finalTag)
         return self.finalTag
 
     #set type of the input field

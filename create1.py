@@ -1,7 +1,7 @@
-from tags.button import *
+from tags.anchor import *
 
 
-s=Button()
-s.setValue("hello")
-s.setOnclick("alert('hrllo')")
-print(s.createButton())
+a=Anchor()
+a.setName("hello")
+a.setLink("google.com");
+a.createAnchor()

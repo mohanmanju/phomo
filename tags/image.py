@@ -7,10 +7,13 @@ class Image:
 
 
     def setFinalTag(self):
-        self.finalTag="<img src=\""+self.source+"\" "+"alt=\""+self.alt+"\" "+"height=\" "+self.height+"\" width=\""+self.width+"\">"
+        self.finalTag="<img src=\""+self.source+"\" "+"alt=\""+self.alt+"\" "+"height=\" "+self.height+"\" width=\""+self.width+"\">\n"
 
     def createImage(self):
         self.setFinalTag()
+        fo=open("1.html","a")
+        fo.write(self.finalTag)
+
         return self.finalTag
 
     def setSource(self,source):

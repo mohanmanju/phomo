@@ -7,11 +7,13 @@ class Button:
     #changing final tag to changed values
     def setFinalTag(self):
         #final string to represent a tag in html
-        self.finalTag="<button onclick=\""+self.onclick+"\" > "+ self.value+ " </button>"
+        self.finalTag="<button onclick=\""+self.onclick+"\" > "+ self.value+ " </button>\n"
 
     #creating input using this methods
     def createButton(self):
         self.setFinalTag()
+        fo=open("1.html","a")
+        fo.write(self.finalTag)
         return self.finalTag
 
 

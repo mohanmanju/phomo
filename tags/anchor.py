@@ -5,10 +5,12 @@ class Anchor:
 
 
     def setFinalTag(self):
-        self.finalTag="<a href=\""+self.link+"\""+">"+self.name+"</a>"
+        self.finalTag="<a href=\""+self.link+"\""+">"+self.name+"</a>\n"
 
     def createAnchor(self):
         self.setFinalTag()
+        fo=open("1.html","a")
+        fo.write(self.finalTag)
         return self.finalTag
 
     def setName(self,name):
